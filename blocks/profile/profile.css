@@ -1,0 +1,22 @@
+/* Стили для экрана более 1280px */
+
+.profile {
+  margin: 40px auto 51px;
+  max-width: calc(100% - 400px);
+  max-height: 120px;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стили для мобильных экранов*/
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    margin: 42px auto 36px;
+    max-width: calc(100% - 38px);
+    max-height: 286px;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,16 @@
+/* Стили для экрана более 1280px */
+
+.pictures {
+  margin: 51px auto 0;
+  max-width: calc(100% - 400px);
+  box-sizing: border-box;
+}
+
+/* Стили для экрана от 320px до 768px */
+
+@media screen and (max-width: 1279px) {
+  .pictures {
+    margin: 36px auto 0;
+    max-width: calc(100% - 38px);
+  }
+}

@@ -1,0 +1,29 @@
+/* Стили для экрана более 1280px */
+
+.profile__add-button {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 50px;
+  background-image: url(../../../images/add-button.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  border: #fff 2px solid;
+  outline: none;
+  transition: 0.3s linear;
+  box-sizing: border-box;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}
+
+/* Стили для экрана от 320px до 768px */
+
+@media screen and (max-width: 1024px) {
+  .profile__add-button {
+    margin: 36px 0 0;
+    width: 282px;
+  }
+}

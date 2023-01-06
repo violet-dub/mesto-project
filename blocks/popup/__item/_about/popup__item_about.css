@@ -1,0 +1,11 @@
+.popup__item_about {
+    margin: 0 0 48px;
+}
+
+/* Стили для экрана от 320px до 768px */
+
+@media screen and (max-width: 768px) {
+    .popup__item_about {
+        margin: 0 0 45px;
+    }
+}

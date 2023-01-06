@@ -1,0 +1,15 @@
+/* Стили для экрана более 1280px */
+
+.pictures__card {
+    margin: 0 auto 0;
+    padding: 0;
+    width: 282px;
+    height: 361px;
+    border-radius: 10px;
+    background-color: #FFF;
+    position: relative;
+    color: #000;
+    border-color: #000;
+    overflow: hidden;
+    box-sizing: border-box;
+}

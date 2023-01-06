@@ -1,0 +1,19 @@
+/* Стили для экрана более 1280px */
+
+.profile__info {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Стили для экрана от 320px до 768px */
+
+@media screen and (max-width: 1024px) {
+  .profile__info {
+    flex-direction: column;
+    max-height: 200px;
+    max-width: 100%;
+  }
+}

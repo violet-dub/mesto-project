@@ -1,0 +1,9 @@
+/* Стили для экрана более 1280px */
+
+.pictures__photo {
+    margin: 0;
+    padding: 0;
+    max-width: 282px;
+    max-height: 282px;
+    object-fit: cover;
+}
