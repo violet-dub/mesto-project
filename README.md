@@ -19,6 +19,6 @@
 
 Стек проекта: HTML, CSS
 
-*GitHub Pages**
+**GitHub Pages**
 
 * [Ссылка на сайт на GitHub Pages](https://violet-dub.github.io/mesto-project/)
