@@ -1,4 +1,5 @@
-.popup__button_save {
+.popup_button_save {
+    margin: 18px auto 0;
     width: 100%;
     height: 50px;
     font-weight: 400;
@@ -12,14 +13,15 @@
     box-sizing: border-box;
 }
 
-.popup__button_save:hover {
+.popup_button_save:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Стили для экрана от 320px до 768px */
 
 @media screen and (max-width: 768px) {
-    .popup__button_save {
+    .popup_button_save {
+        margin: 15px auto 0;
         height: 46px;
         font-size: 14px;
         line-height: 17px;

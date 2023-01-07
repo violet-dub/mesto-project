@@ -1,14 +1,15 @@
 /* Стили для экрана более 1280px */
 
 .profile__name {
-    margin: 0 18px 0 0;
+    margin: 9px 18px 0 0;
     padding: 0;
-    min-width: 294px;
-    max-height: 39px;
+    width: 294px;
     font-weight: 500;
     font-size: 42px;
     line-height: 48px;
-    overflow: visible;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 /* Стили для экрана от 320px до 768px */
@@ -18,7 +19,6 @@
         margin: 0 10px 0 27px;
         font-size: 27px;
         line-height: 33px;
-        max-height: 26px;
-        min-width: 189px;
+        width: 189px;
     }
 }

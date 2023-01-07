@@ -1,7 +1,7 @@
 /* Стили для экрана более 1280px */
 
 .profile__edit-button {
-    margin: 0;
+    margin: 23px 0 0 0;
     padding: 0;
     width: 24px;
     height: 24px;
@@ -15,6 +15,7 @@
     background-position: center;
     outline: none;
     transition: 0.3s linear;
+    cursor: pointer
 }
 
 .profile__edit-button:hover {
@@ -25,6 +26,7 @@
 
 @media screen and (max-width: 1024px) {
     .profile__edit-button {
+        margin: 8px 0 0 0;
         width: 18px;
         height: 18px;
         background-size: 7.5px 7.5px;

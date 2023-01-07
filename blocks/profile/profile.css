@@ -1,9 +1,8 @@
 /* Стили для экрана более 1280px */
 
 .profile {
-  margin: 40px auto 51px;
+  margin: 40px auto 0;
   max-width: calc(100% - 400px);
-  max-height: 120px;
   display: flex;
   box-sizing: border-box;
   justify-content: space-between;
@@ -16,7 +15,6 @@
   .profile {
     margin: 42px auto 36px;
     max-width: calc(100% - 38px);
-    max-height: 286px;
     flex-direction: column;
   }
 }

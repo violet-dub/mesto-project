@@ -1,27 +1,27 @@
 /* Стили для экрана более 1280px */
 
 .pictures__like-button {
+    margin: 5px 0 0 19px;
+    padding: 0;
     width: 22px;
     height: 19px;
-    margin: 0;
-    padding: 0;
     display: block;
-    position: absolute;
-    bottom: 29px;
-    right: 20px;
     background-image: url(../../../images/like_disabled.svg);
     background-repeat: no-repeat;
     outline: none;
     border: none;
     background-color: transparent;
     z-index: 1;
+    opacity: 1;
     transition: 0.2s linear;
+    cursor: pointer;
 }
 
 .pictures__like-button:hover {
-    background-image: url(../../../images/like_hover.svg);
+    opacity: 0.5;
 }
 
 .pictures__like-button:active {
     background-image: url(../../../images/like_active.svg);
+    opacity: 1;
 }

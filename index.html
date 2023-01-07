@@ -26,47 +26,57 @@
         <div class="profile__name-container">
           <div class="profile__name-head">
             <h1 class="profile__name">Дарт Вейдер</h1>
-            <button type="button" class="profile__edit-button" title="Редактировать профиль"
-              aria-label="Кнопка редактирования профиля"></button>
+            <button type="button" class="profile__edit-button" aria-label="Кнопка редактирования профиля"></button>
           </div>
           <p class="profile__about">Владыка Ситх</p>
         </div>
       </div>
-      <button class="profile__add-button" type="button" title="Добавить фото"
-        aria-label="Кнопка добавления контента"></button>
+      <button class="profile__add-button" type="button" aria-label="Кнопка добавления контента"></button>
     </section>
     <!-- Третий блок, карточки мест -->
     <section class="pictures">
       <ul class="pictures__list">
         <li class="pictures__card">
           <img src="images/Mustafar.jpg" alt="Фотография планеты Мустафар" class="pictures__photo">
-          <h2 class="pictures__heading">Мустафар</h2>
-          <button type="button" class="pictures__like-button" title="Нажать лайк" aria-label="Кнопка лайка"></button>
+          <div class="pictures__info">
+            <h2 class="pictures__heading">Мустафар</h2>
+            <button type="button" class="pictures__like-button" aria-label="Кнопка лайка"></button>
+          </div>
         </li>
         <li class="pictures__card">
           <img src="images/Kamino.jpg" alt="Фотография планеты Камино" class="pictures__photo">
-          <h2 class="pictures__heading">Камино</h2>
-          <button type="button" class="pictures__like-button" title="Нажать лайк" aria-label="Кнопка лайка"></button>
+          <div class="pictures__info">
+            <h2 class="pictures__heading">Камино</h2>
+            <button type="button" class="pictures__like-button" aria-label="Кнопка лайка"></button>
+          </div>
         </li>
         <li class="pictures__card">
           <img src="images/Endor.jpg" alt="Фотография планеты Эндор" class="pictures__photo">
-          <h2 class="pictures__heading">Лесистый спутник Эндора</h2>
-          <button type="button" class="pictures__like-button" title="Нажать лайк" aria-label="Кнопка лайка"></button>
+          <div class="pictures__info">
+            <h2 class="pictures__heading">Лесистый спутник Эндора</h2>
+            <button type="button" class="pictures__like-button" aria-label="Кнопка лайка"></button>
+          </div>
         </li>
         <li class="pictures__card">
           <img src="images/Coruscant.jpg" alt="Фотография планеты Корусант" class="pictures__photo">
-          <h2 class="pictures__heading">Корусант</h2>
-          <button type="button" class="pictures__like-button" title="Нажать лайк" aria-label="Кнопка лайка"></button>
+          <div class="pictures__info">
+            <h2 class="pictures__heading">Корусант</h2>
+            <button type="button" class="pictures__like-button" aria-label="Кнопка лайка"></button>
+          </div>
         </li>
         <li class="pictures__card">
           <img src="images/Naboo.jpg" alt="Фотография планеты Набу" class="pictures__photo">
-          <h2 class="pictures__heading">Набу</h2>
-          <button type="button" class="pictures__like-button" title="Нажать лайк" aria-label="Кнопка лайка"></button>
+          <div class="pictures__info">
+            <h2 class="pictures__heading">Набу</h2>
+            <button type="button" class="pictures__like-button" aria-label="Кнопка лайка"></button>
+          </div>
         </li>
         <li class="pictures__card">
           <img src="images/Tatooine.jpg" alt="Фотография планеты Татуин" class="pictures__photo">
-          <h2 class="pictures__heading">Татуин</h2>
-          <button type="button" class="pictures__like-button" title="Нажать лайк" aria-label="Кнопка лайка"></button>
+          <div class="pictures__info">
+            <h2 class="pictures__heading">Татуин</h2>
+            <button type="button" class="pictures__like-button" aria-label="Кнопка лайка"></button>
+          </div>
         </li>
       </ul>
     </section>
@@ -76,27 +86,26 @@
     <p class="footer__copyright">&copy;&nbsp;2022. Валя Дубровина</p>
   </footer>
   <!-- Блок с поп-апом -->
-  <section class="popup popup_opened">
-
-    <form class="popup__container">
-      <!-- Элементы формы для получения данных о пользователе -->
-      <fieldset class="popup__profile-info">
-        <!-- Заголовок формы -->
-        <legend class="popup__title">Редактировать профиль</legend>
-        <!-- Поле ввода имени -->
-        <input type="text" class="popup__item popup__item_name" name="fullname" placeholder="Дарт Вейдер" required>
-        <!-- Поле ввода о себе -->
-        <input type="text" class="popup__item popup__item_about" name="about" placeholder="Владыка Ситх" required>
-        <!-- Кнопка сохранения -->
-        <button type="submit" class="popup__button popup__button_save" title="Сохранить"
-          aria-label="Кнопка сохранения">Сохранить</button>
-      </fieldset>
-      <!-- Кнопка закрытия формы -->
-      <button type="button" class="popup__button popup__button_close" title="Закрыть поп-ап"
-        aria-label="Кнопка закрытия поп-апа"></button>
-    </form>
-
-  </section>
+  <div class="popup popup_opened">
+    <div class="popup__window">
+      <form class="popup__container" name="edit-form">
+        <!-- Элементы формы для получения данных о пользователе -->
+        <fieldset class="popup__edit-info">
+          <!-- Заголовок формы -->
+          <legend class="popup__title">Редактировать профиль</legend>
+          <!-- Поле ввода имени -->
+          <input type="text" class="popup__item" name="fullname" placeholder="Введите ваше имя" required>
+          <!-- Поле ввода о себе -->
+          <input type="text" class="popup__item" name="about" placeholder="Укажите вашу профессию" required>
+          <!-- Кнопка сохранения -->
+          <button type="submit" class="popup__button popup_button_save"
+            aria-label="Кнопка сохранения">Сохранить</button>
+        </fieldset>
+        <!-- Кнопка закрытия формы -->
+        <button type="button" class="popup__button popup_button_close" aria-label="Кнопка закрытия поп-апа"></button>
+      </form>
+    </div>
+  </div>
 </body>
 <!-- Конец наполнения всего сайта -->
 
