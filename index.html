@@ -87,8 +87,8 @@
   </footer>
   <!-- Блок с поп-апом -->
   <div class="popup popup_opened">
-    <div class="popup__window">
-      <form class="popup__container" name="edit-form">
+    <div class="popup__container">
+      <form class="popup__edit-form" name="edit-form">
         <!-- Элементы формы для получения данных о пользователе -->
         <fieldset class="popup__edit-info">
           <!-- Заголовок формы -->
@@ -98,12 +98,12 @@
           <!-- Поле ввода о себе -->
           <input type="text" class="popup__item" name="about" placeholder="Укажите вашу профессию" required>
           <!-- Кнопка сохранения -->
-          <button type="submit" class="popup__button popup_button_save"
+          <button type="submit" class="popup__save-button"
             aria-label="Кнопка сохранения">Сохранить</button>
         </fieldset>
-        <!-- Кнопка закрытия формы -->
-        <button type="button" class="popup__button popup_button_close" aria-label="Кнопка закрытия поп-апа"></button>
       </form>
+      <!-- Кнопка закрытия формы -->
+      <button type="button" class="popup__close-button" aria-label="Кнопка закрытия поп-апа"></button>
     </div>
   </div>
 </body>

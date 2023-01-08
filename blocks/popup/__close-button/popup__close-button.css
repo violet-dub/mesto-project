@@ -1,4 +1,8 @@
-.popup_button_close {
+.popup__close-button {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s linear;
+    cursor: pointer;
     width: 32px;
     height: 32px;
     position: absolute;
@@ -12,14 +16,14 @@
     border: none;
 }
 
-.popup_button_close:hover {
+.popup__close-button:hover {
     opacity: 0.6;
 }
 
 /* Стили для экрана от 320px до 768px */
 
 @media screen and (max-width: 768px) {
-    .popup_button_close {
+    .popup__close-button {
         width: 20px;
         height: 20px;
         top: -36px;

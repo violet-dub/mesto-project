@@ -1,14 +1,21 @@
 .popup__container {
-    margin: 34px 36px 37px 36px;
+    margin: auto;
     padding: 0;
-    color: #000;
+    width: 430px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
-/* Стили для экрана от 320px до 768px */
+/* Стили для экрана до 768px */
 
 @media screen and (max-width: 768px) {
     .popup__container {
-        margin: 25px 22px;
+        width: 282px;
     }
 }
